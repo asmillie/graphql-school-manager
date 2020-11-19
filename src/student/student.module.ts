@@ -13,6 +13,9 @@ import { StudentService } from './student.service';
   providers: [
     StudentService,
     StudentResolver,
+  ],
+  exports: [
+    StudentService,
   ]
 })
 export class StudentModule {}
